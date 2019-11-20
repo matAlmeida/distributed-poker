@@ -1,14 +1,14 @@
 from distributed_poker.base import Card
 import numpy
 
-class Deck:
+class Deck(object):
     def __init__(self):
         self.cards = []
         self.cardsInGame = []
         self.Shuffle()
 
     def Shuffle(self):
-        values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'A', 'J', 'Q', 'K']
+        values = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13']
         hearts = [Card('hearts', value) for value in values]
         spades = [Card('spades', value) for value in values]
         clubs = [Card('clubs', value) for value in values]
